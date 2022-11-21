@@ -7,7 +7,7 @@
 # Contributor: Stephan Friedrichs <deduktionstheorem@googlemail.com>
 
 pkgname=scipoptsuite
-pkgver=7.0.3
+pkgver=8.0.2
 pkgrel=1
 pkgdesc='Toolbox for generating and solving optimization problems (with Parallel Processing)'
 arch=('x86_64')
@@ -20,12 +20,17 @@ optdepends=('cliquer: C routines for finding cliques in an arbitrary weighted gr
             'hmetis: A set of programs for partitioning hypergraphs'
             'criterion: A cross-platform C and C++ unit testing framework')
 provides=("scip=$pkgver"
-          'soplex=5.0.1'
-          'zimpl=3.4.0'
-          'gcg=3.0.3'
-          'papilo=1.0.1')
+          'soplex=6.0.2'
+          'zimpl=3.5.3'
+          'gcg=3.5.2'
+          'papilo=2.1.1'
+          'ipopt=3.13.2'
+          'cppad=20180000.0'
+          'zlib=1.2.11'
+          'bliss=0.77'
+          'gmp=6.2.1')
 source=("local:///$pkgname-$pkgver.tgz")
-sha256sums=('5af5185a6e60cc62d1a89e3ac4fe22d32351a5158c2c04a95e180e76eb98cc07')
+sha256sums=('1cfc8d31b4ef9c12fae535f5c911616491439bb79cdfa39a30e4d035f4919d96')
 options=('strip')
 
 prepare(){
